@@ -30,11 +30,33 @@
 }
 
 .container {
+  margin: 0 auto;
+  width: 100%;
+  min-width: 320px;
+  padding: 0 20px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding: 0 34px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    width: 1280px;
+    padding: 0 115px;
+  }
+}
+
+.section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0 20px;
-  margin: 0 auto;
   flex-direction: column;
 }
 
@@ -86,14 +108,15 @@ ul {
   color: #ffffff;
   padding-top: 161px;
   padding-bottom: 30px;
+  margin: 0;
 }
 
 .product-item__background--primary {
   position: relative;
   background: #ffa5ba;
   border-radius: 24px;
-  width: 329px;
-  height: 525px;
+  width: 280px;
+  height: 485px;
   margin-bottom: 130px;
 }
 .product-item__background--primary::before {
@@ -102,7 +125,7 @@ ul {
   z-index: 3;
   width: 249px;
   height: 252px;
-  left: 44px;
+  left: 17px;
   top: -115px;
 }
 
@@ -110,8 +133,8 @@ ul {
   position: relative;
   background: #f0d1a5;
   border-radius: 24px;
-  width: 329px;
-  height: 525px;
+  width: 280px;
+  height: 485px;
   margin-bottom: 130px;
 }
 .product-item__background--secondary::before {
@@ -120,7 +143,7 @@ ul {
   z-index: 3;
   width: 249px;
   height: 252px;
-  left: 44px;
+  left: 17px;
   top: -115px;
 }
 
@@ -128,8 +151,8 @@ ul {
   position: relative;
   background: #c2e297;
   border-radius: 24px;
-  width: 329px;
-  height: 525px;
+  width: 280px;
+  height: 485px;
 }
 .product-item__background--tertiary::before {
   content: url("../images/milkshakes.png");
@@ -137,7 +160,7 @@ ul {
   z-index: 3;
   width: 249px;
   height: 252px;
-  left: 44px;
+  left: 17px;
   top: -115px;
 }
 
@@ -153,6 +176,7 @@ ul {
   padding-bottom: 30px;
   padding-left: 41px;
   padding-right: 39px;
+  margin: 0;
 }
 
 .product-item__dots {
