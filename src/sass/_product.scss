@@ -121,7 +121,9 @@ ul {
       height: 226px;
     }
     @media screen and (min-width: 1280px) {
-      left: 42px;
+      left: 0px;
+      width: 335px;
+      height: 335px;
     }
   }
 }
@@ -133,6 +135,14 @@ ul {
   width: 280px;
   height: 485px;
   margin-bottom: 130px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 329px;
+    height: 525px;
+  }
 
   &::before {
     content: url('../images/ice-coffee.png');
@@ -148,16 +158,10 @@ ul {
       height: 226px;
     }
     @media screen and (min-width: 1280px) {
-      left: 42px;
+      left: 0px;
+      width: 335px;
+      height: 335px;
     }
-  }
-  @media screen and (min-width: 768px) {
-    width: 220px;
-    height: 485px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 329px;
-    height: 525px;
   }
 }
 .product-item__background--tertiary {
@@ -166,6 +170,14 @@ ul {
   border-radius: 24px;
   width: 280px;
   height: 485px;
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 329px;
+    height: 525px;
+  }
 
   &::before {
     content: url('../images/milkshakes.png');
@@ -177,21 +189,17 @@ ul {
     top: -115px;
 
     @media screen and (min-width: 768px) {
+      content: url('../images/milkshakes@2x.png');
       left: -11px;
-      width: 220px;
-      height: 226px;
+      padding: ;
+      // width: 220px;
+      // height: 226px;
     }
     @media screen and (min-width: 1280px) {
-      left: 42px;
+      left: 0px;
+      width: 335px;
+      height: 335px;
     }
-  }
-  @media screen and (min-width: 768px) {
-    width: 220px;
-    height: 485px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 329px;
-    height: 525px;
   }
 }
 
@@ -217,7 +225,7 @@ ul {
     padding-top: 32px;
     padding-left: 44px;
     padding-right: 44px;
-    padding-bottom: 62px;
+    padding-bottom: 40px;
   }
 }
 .product-item__dots {
