@@ -11,7 +11,7 @@ ul {
   display: flex;
   text-align: center;
   text-transform: uppercase;
-  font-family: $font-family-primary;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 34px;
   line-height: 39px;
@@ -37,7 +37,7 @@ ul {
   padding-top: 121px;
   font-weight: 400;
   padding-bottom: 15px;
-  font-family: $font-family-primary;
+  font-family: 'Titan One', cursive;
   font-size: 18px;
   line-height: 21px;
   letter-spacing: 0.04em;
@@ -61,11 +61,15 @@ ul {
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex-basis: calc((100% - 40px) / 2);
+    flex-basis: calc((100% - 40px) / 3);
+  }
+  @media screen and (min-width: 1280px) {
+    gap: 27px;
+    flex-basis: calc((100% - 54px) / 3);
   }
 }
 .product-item__title {
-  font-family: $font-family-primary;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 20px;
   line-height: 23px;
@@ -94,6 +98,15 @@ ul {
   height: 485px;
   margin-bottom: 130px;
 
+  @media screen and (min-width: 768px) {
+    width: 220px;
+    height: 485px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 330px;
+    height: 525px;
+  }
+
   &::before {
     content: url('../images/ice-cream.png');
     position: absolute;
@@ -102,16 +115,17 @@ ul {
     height: 252px;
     left: 17px;
     top: -115px;
-  }
-  @media screen and (min-width: 768px) {
-    width: 220px;
-    height: 485px;
-  }
-  @media screen and (min-width: 1280px) {
-    width: 329px;
-    height: 525px;
+    @media screen and (min-width: 768px) {
+      left: -11px;
+      width: 220px;
+      height: 226px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 42px;
+    }
   }
 }
+
 .product-item__background--secondary {
   position: relative;
   background: $coffee;
@@ -128,6 +142,14 @@ ul {
     height: 252px;
     left: 17px;
     top: -115px;
+    @media screen and (min-width: 768px) {
+      left: -11px;
+      width: 220px;
+      height: 226px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 42px;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 220px;
@@ -153,6 +175,15 @@ ul {
     height: 252px;
     left: 17px;
     top: -115px;
+
+    @media screen and (min-width: 768px) {
+      left: -11px;
+      width: 220px;
+      height: 226px;
+    }
+    @media screen and (min-width: 1280px) {
+      left: 42px;
+    }
   }
   @media screen and (min-width: 768px) {
     width: 220px;
@@ -165,7 +196,7 @@ ul {
 }
 
 .product-item__description {
-  font-family: $font-family-secondary;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   font-size: 14px;
   line-height: 21px;
