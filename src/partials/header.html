@@ -1,3 +1,36 @@
-<header>
-  <h1>ICE CREAM HEADER</h1>
+<header class="header">
+  
+  <div clacc="header-wrapper container">         
+    <div class="header-flex">
+      <div class="header-logo">
+        <a href="#" class="header-logo__link">
+          <img src="../src/images/logo.png" alt="logo" />
+          
+        </a>
+      </div>
+          <div class="header-navigation">
+            <nav class="header-navigation__section">
+              <ul class="header-navigation__list">
+                <li><a class="header-navigation__list-item header-navigation__list-item--1" href="#">Home</a></li>
+                <li><a class="header-navigation__list-item header-navigation__list-item--2" href="#">About us</a></li>
+                <li><a class="header-navigation__list-item header-navigation__list-item--3" href="#">How it's made?</a></li>
+                <li><a class="header-navigation__list-item header-navigation__list-item--4" href="#">Our products</a></li>
+                <li><a class="header-navigation__list-item header-navigation__list-item--5" href="#">Contacts</a></li>
+              </ul>
+            </nav>
+          </div> 
+          <div class="header-burger__menu" data menu="#" aria expanded="true">
+            <button class="header-burger__button-open" type="button">
+              <svg class="header-burger__icon" width="20" height="20">
+                <use href="../src/images/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+          </div>  
+          <div class="header-form"> <button class="header-form__button" type="button" data-modal-open>
+            BUY NOW >
+          </button>     
+      </div>
+    </div>
+  </div>
+
 </header>

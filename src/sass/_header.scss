@@ -1,0 +1,125 @@
+.header{
+  background-color: #ffb8ca;
+}
+
+.container {
+  position: relative;
+  background-color: #ffb8ca;
+}
+
+.header-navigation__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap:35px
+  
+}
+
+.header-navigation {
+  margin:auto;
+}
+
+
+.header-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  padding-top: 37px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-logo {
+  padding-right: 120px;
+  display: flex;
+  width:auto
+}
+
+
+.header-form__button {
+display: none;
+}
+
+.header-burger__button-open{
+  padding: 0px;
+  border:none;
+  box-shadow: none;
+  background-color: #ffb8ca;
+}
+
+.header-navigation__list-item{
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .header-burger__icon {
+    background-color: #ffb8ca;
+     border: none;
+     fill: #d41443;
+  
+   }
+ .header-flex{
+  padding-left: 34px;
+  padding-right: 34px;
+ }
+
+   .header-form__button {
+  width: 159px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  font-family: var($font-family-secondary);
+  color: #d41443;
+  font-size: 16px;
+  font-weight: 700;
+  margin:auto;
+  margin-left: 30px;
+  background-color: #FFFFFF;
+  align-items: center;
+  display: block;
+
+  }}
+ @media screen and (min-width: 1280px) {  
+.header-navigation__list-item {
+  font-family: var($font-family-secondary);
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 100%;
+  visibility: visible;
+
+}
+.header-navigation__list-item--2{
+  width:70px;
+}
+.header-navigation__list-item--3{
+  width:117px;
+}
+
+.header-navigation__list-item--4{
+  width:104px;
+}
+  
+  .header-navigation__list-item:focus,
+  .header-navigation__list-item:hover{
+    color: #d41443;
+  }
+
+
+  .header-form{
+    display: block;
+    align-items: right;
+    margin-right: 115px;
+  }
+  .header-flex{
+    padding-left: 115px;
+    padding-right: 115px;
+  }
+
+.header-burger__button-open{
+  visibility:hidden;
+}}
