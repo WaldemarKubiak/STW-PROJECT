@@ -21,6 +21,7 @@
 
   color: #ffa5ba;
   font-family: 'Titan One';
+  margin-top: 125px;
 }
 .about__second-headline {
   text-align: center;
@@ -41,6 +42,11 @@
   max-width: 280px;
   margin-bottom: 46px;
 }
+@media (min-width: 768px) {
+  .about__image {
+    margin: 0;
+  }
+}
 .about__first-description {
   max-width: 220px;
   margin: auto;
@@ -51,6 +57,11 @@
   margin-bottom: 47px;
   color: #000000;
   font-family: 'DM Sans';
+}
+@media (min-width: 768px) {
+  .about__first-description {
+    max-width: 340px;
+  }
 }
 .about__background-milk-image {
   background-image: url(../images/background-milk.png);
@@ -69,6 +80,12 @@
   color: #907e82;
   font-family: 'DM Sans';
 }
+@media (min-width: 768px) {
+  .about__second-description {
+    max-width: 340px;
+    letter-spacing: 0.04em;
+  }
+}
 .about__btn {
   margin-top: 47px;
   font-weight: 700;
@@ -83,7 +100,23 @@
   background: #ffffff;
   border-radius: 22px;
   padding-left: 15px;
+  border: 0px;
 }
 .about__btn-icon {
   fill: rgba(212, 20, 67, 1);
+}
+.about__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .about__wrapper {
+    flex-direction: row;
+    gap: 17px;
+  }
+}
+.about__img-wrapper {
+  display: flex;
+  justify-content: center;
 }
