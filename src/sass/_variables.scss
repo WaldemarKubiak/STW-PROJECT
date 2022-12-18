@@ -1,6 +1,7 @@
 $red-font: #d41443;
 $pink-font: #ffa5ba;
 $pink-svg: #fea5bb;
+$pink-background: #FFF5F6;
 $white: #ffffff;
 $hove-btn-white: #ecebeb;
 $pitaja: #ffb8ca;
@@ -11,3 +12,9 @@ $pinkt-bcg-dark: #ffb8ca;
 
 $font-family-primary: Titan One;
 $font-family-secondary: DM Sans;
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
