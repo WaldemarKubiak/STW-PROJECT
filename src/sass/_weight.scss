@@ -1,0 +1,123 @@
+.background {
+  background-color: #fff5f6;
+}
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  &__title {
+    color: transparent;
+    margin: 0;
+  }
+
+  &__list {
+    list-style: none;
+    font-family: $font-family-primary, sans-serif;
+    font-style: normal;
+    color: $red-font;
+    font-size: 36px;
+    padding-left: 0;
+    padding-right: 50px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    margin: 0;
+  }
+
+  &__item {
+    margin-top: 104px;
+    position: relative;
+  }
+
+  &__item--third {
+    margin-bottom: 97px;
+  }
+
+  &__text {
+    font-family: $font-family-secondary, sans-serif;
+    color: #000;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.7;
+    letter-spacing: normal;
+    margin-bottom: 0;
+    max-width: 230px;
+  }
+
+  @media screen and (min-width: 768px) {
+    &__list {
+      display: flex;
+      flex-direction: row;
+      font-size: 48px;
+      line-height: 1.15;
+      gap: 60px;
+      text-transform: lowercase;
+    }
+    &__text {
+      font-size: 14px;
+      line-height: 1.74;
+      letter-spacing: normal;
+      margin-bottom: 0;
+      text-transform: none;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &__list {
+      font-size: 58px;
+      line-height: 1.14;
+    }
+    &__text {
+      font-size: 16px;
+      line-height: 1.76;
+      max-width: 330px;
+    }
+  }
+}
+
+.advantages__item--first::before {
+  content: ('');
+  background-image: url(../images/icon-one.png);
+  background-size: cover;
+  position: absolute;
+  width: 33px;
+  height: 50px;
+  left: 0;
+  top: -67px;
+
+  @media screen and (min-width: 768px) {
+    top: -77px;
+  }
+}
+
+.advantages__item--second::before {
+  content: ('');
+  background-image: url(../images/icon-two.png);
+  background-size: cover;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0;
+  top: -67px;
+
+  @media screen and (min-width: 768px) {
+    top: -77px;
+  }
+}
+
+.advantages__item--third::before {
+  content: ('');
+  background-image: url(../images/icon-three.png);
+  background-size: cover;
+  position: absolute;
+  width: 44px;
+  height: 50px;
+  left: 0;
+  top: -67px;
+
+  @media screen and (min-width: 768px) {
+    top: -77px;
+  }
+}
