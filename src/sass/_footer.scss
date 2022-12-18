@@ -112,8 +112,8 @@
   border-radius: 50%;
   fill: $white;
   background-color: $pink-svg;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color $transition-duration $transition-timing-function,
+    fill $transition-duration $transition-timing-function;
 
   @media screen and (min-width: 768px) {
     width: 34px;
@@ -161,7 +161,7 @@
   &__link {
     color: $red-font;
     text-decoration: none;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $transition-duration $transition-timing-function;
 
     &:hover,
     &:focus {
@@ -171,7 +171,7 @@
 }
 
 .footer-copyright {
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid $grey-line;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -195,7 +195,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.5;
-    color: #907e82; //wstawić zmienną!!!!!!!!!!
+    color: $copyright-font;
     padding: 0 5px;
 
     @media screen and (min-width: 768px) {
