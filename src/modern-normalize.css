@@ -42,7 +42,12 @@ body {
   margin: 0; /* 1 */
   font-family: system-ui, -apple-system,
     /* Firefox supports this but not yet `system-ui` */ 'Segoe UI', Roboto, Helvetica, Arial,
-    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji'; /* 2 */
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', DM-Sans, sans-serif; /* 2 */
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*
@@ -167,7 +172,21 @@ button,
 select {
   text-transform: none;
 }
-
+button {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
 /**
 Correct the inability to style clickable types in iOS and Safari.
 */
