@@ -4,12 +4,14 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+
 @import './variables';
+@import './product';
 @import './container';
 @import './header'; //Paweł Bogusz
 @import './icecream'; //Tomasz Ostaszewski
 @import './about'; //Tomasz Palica
-@import './products'; //Weronika Niemczyk
+@import './product'; //Weronika Niemczyk
 @import './weight'; //Szymon Śliwa
 @import './gallery'; //Vincent Słomiński
 @import './contacts'; //Szymon Prus
