@@ -1,5 +1,5 @@
 .background {
-  background-color: #fff5f6;
+  background-color: $pink-background;
 }
 
 .advantages {
@@ -37,7 +37,7 @@
 
   &__text {
     font-family: $font-family-secondary, sans-serif;
-    color: #000;
+    color: $black;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
