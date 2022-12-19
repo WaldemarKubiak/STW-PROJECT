@@ -1,0 +1,113 @@
+.mobile-menu__element {
+  padding-inline: 20px;
+}
+
+.mobile-menu__button {
+  font-family: DM Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  background: $white;
+  border-radius: 22px;
+  width: 100%;
+  height: 44px;
+  border: $white;
+  color: $red-font;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 23px;
+  right: 28px;
+  padding: 0;
+  color: $white;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.mobile-menu .link {
+  display: block;
+  color: $white;
+  padding-top: 13px;
+  padding-bottom: 11px;
+  padding-left: 21px;
+  text-decoration: none;
+  border-bottom: 1px solid #e18298;
+}
+
+.link {
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.link:hover {
+  color: $red-font;
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 1s;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding-top: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+/* @media (min-width: 768px)@media (min-width: 768px)@media (min-width: 768px)@media (min-width: 768px)
+@media (min-width: 768px)@media (min-width: 768px)@media (min-width: 768px)@media (min-width: 768px) */
+
+/* @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) 
+@media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px)  */
+
+@media (min-width: 320px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #e17992;
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+  }
+
+  .menu-container.is-open {
+    transform: translateX(0);
+  }
+}
