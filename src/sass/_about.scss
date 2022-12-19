@@ -70,12 +70,26 @@
 }
 .about__image {
   margin: auto;
-  max-width: 280px;
+
+  height: 279px;
   margin-bottom: 46px;
+}
+@media (max-width: 767px) {
+  .about__image {
+    max-width: 280px;
+  }
 }
 @media (min-width: 768px) {
   .about__image {
     margin: 0;
+    width: 340px;
+    height: 339px;
+  }
+  @media (min-width: 1280px) {
+    .about__image {
+      width: 516px;
+      height: 516px;
+    }
   }
 }
 .about__first-description {
@@ -127,6 +141,7 @@
     position: absolute;
     height: 534px;
     bottom: 24px;
+    width: 100vw;
   }
 }
 .about__second-description {
