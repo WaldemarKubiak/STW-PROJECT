@@ -1,12 +1,12 @@
-.background {
-  background-color: #fff5f6;
-}
+.advantages-section {
+  background-color: $pink-background;
 
-.advantages {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
   &__title {
     color: transparent;
@@ -37,7 +37,7 @@
 
   &__text {
     font-family: $font-family-secondary, sans-serif;
-    color: #000;
+    color: $black;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
@@ -77,7 +77,7 @@
   }
 }
 
-.advantages__item--first::before {
+.advantages-section__item--first::before {
   content: ('');
   background-image: url(../images/icon-one.png);
   background-size: cover;
@@ -92,7 +92,7 @@
   }
 }
 
-.advantages__item--second::before {
+.advantages-section__item--second::before {
   content: ('');
   background-image: url(../images/icon-two.png);
   background-size: cover;
@@ -107,7 +107,7 @@
   }
 }
 
-.advantages__item--third::before {
+.advantages-section__item--third::before {
   content: ('');
   background-image: url(../images/icon-three.png);
   background-size: cover;
