@@ -3,7 +3,6 @@ body {
 }
 
 .text-decoration {
-    list-style: none;
     text-decoration: none;
 }
 
@@ -89,7 +88,6 @@ body {
         position: absolute;
         font-size: 12px;
         line-height: 186%;
-        margin-left: -40px;
     }
 
     &__plan--first {
@@ -204,7 +202,7 @@ body {
         }
 
         &__plan {
-            left: 70px;
+            left: 30px;
         }
 
         &__plan--first {
@@ -252,11 +250,21 @@ body {
         }
 
         &__plan {
-            left: 83px;
+            left: 43px;
         }
 
         &__nav {
             left: 43px;
         }
     }
+}
+.contacts-icon--first {
+    width: 5px;
+    height: 8px;
+    fill: $white;
+}
+.contacts-icon--second {
+    width: 5px;
+    height: 8px;
+    fill: $red-font;
 }
