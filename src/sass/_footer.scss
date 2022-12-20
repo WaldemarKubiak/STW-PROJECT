@@ -5,6 +5,7 @@
 .container {
   &__change {
     margin-bottom: 43px;
+    padding-top: 1px;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -81,59 +82,55 @@
   }
 }
 
-// .list {
-// list-style: none;
-// margin: 0;
-// padding: 0;
-// }
+.footer-social {
+  &__list {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 46px;
+    gap: 28px;
 
-.footer-social__list {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 46px;
-  gap: 28px;
+    @media screen and (min-width: 768px) {
+      gap: 30px;
+    }
 
-  @media screen and (min-width: 768px) {
-    gap: 30px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+      gap: 24px;
+    }
   }
 
-  @media screen and (min-width: 1280px) {
-    margin-bottom: 50px;
-    gap: 24px;
+  &__sprite {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    fill: $white;
+    background-color: $pink-svg;
+    transition: background-color $transition-duration $transition-timing-function,
+      fill $transition-duration $transition-timing-function;
+
+    @media screen and (min-width: 768px) {
+      width: 34px;
+      height: 34px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $red-font;
+      fill: $pistachio;
+    }
   }
-}
 
-.footer-social__sprite {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  fill: $white;
-  background-color: $pink-svg;
-  transition: background-color $transition-duration $transition-timing-function,
-    fill $transition-duration $transition-timing-function;
+  &__icon {
+    width: 18px;
+    height: 19px;
 
-  @media screen and (min-width: 768px) {
-    width: 34px;
-    height: 34px;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $red-font;
-    fill: $pistachio;
-  }
-}
-
-.footer-social__icon {
-  width: 18px;
-  height: 19px;
-
-  @media screen and (min-width: 768px) {
-    width: 20px;
-    height: 20px;
+    @media screen and (min-width: 768px) {
+      width: 20px;
+      height: 20px;
+    }
   }
 }
 
