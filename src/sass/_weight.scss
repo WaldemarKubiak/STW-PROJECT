@@ -9,8 +9,7 @@
   }
 
   &__title {
-    color: transparent;
-    margin: 0;
+    display: none;
   }
 
   &__list {
@@ -31,8 +30,53 @@
     position: relative;
   }
 
+  &__item--first::before {
+    content: ('');
+    background-image: url(../images/icon-one.png);
+    background-size: cover;
+    position: absolute;
+    width: 33px;
+    height: 50px;
+    left: 0;
+    top: -67px;
+
+    @media screen and (min-width: 768px) {
+      top: -77px;
+    }
+  }
+
+  &__item--second::before {
+    content: ('');
+    background-image: url(../images/icon-two.png);
+    background-size: cover;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: -67px;
+
+    @media screen and (min-width: 768px) {
+      top: -77px;
+    }
+  }
+
   &__item--third {
     margin-bottom: 97px;
+
+    &:before {
+      content: ('');
+      background-image: url(../images/icon-three.png);
+      background-size: cover;
+      position: absolute;
+      width: 44px;
+      height: 50px;
+      left: 0;
+      top: -67px;
+
+      @media screen and (min-width: 768px) {
+        top: -77px;
+      }
+    }
   }
 
   &__text {
@@ -75,49 +119,9 @@
       max-width: 330px;
     }
   }
-}
-
-.advantages-section__item--first::before {
-  content: ('');
-  background-image: url(../images/icon-one.png);
-  background-size: cover;
-  position: absolute;
-  width: 33px;
-  height: 50px;
-  left: 0;
-  top: -67px;
-
-  @media screen and (min-width: 768px) {
-    top: -77px;
-  }
-}
-
-.advantages-section__item--second::before {
-  content: ('');
-  background-image: url(../images/icon-two.png);
-  background-size: cover;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 0;
-  top: -67px;
-
-  @media screen and (min-width: 768px) {
-    top: -77px;
-  }
-}
-
-.advantages-section__item--third::before {
-  content: ('');
-  background-image: url(../images/icon-three.png);
-  background-size: cover;
-  position: absolute;
-  width: 44px;
-  height: 50px;
-  left: 0;
-  top: -67px;
-
-  @media screen and (min-width: 768px) {
-    top: -77px;
+  @media screen and (max-width: 767px) {
+    &__container {
+      max-width: 320px;
+    }
   }
 }
