@@ -1,5 +1,8 @@
 .contacts {
-    background-color: $pink-bcg-light;
+    background: linear-gradient(
+        $white 25%,
+        $pink-bcg-light 25% 
+    );
 }
 .cards {
     display: flex;
@@ -19,7 +22,6 @@
     height: 8px;
 }
 .container-contacts {
-    padding: 86px;
     padding-bottom: 86px;
 }
 .container-contacts-btn {
@@ -56,6 +58,7 @@
         top: 83px;
         line-height: 186%;
         letter-spacing: 0.04em;
+        font-weight: 500;
     }
 
     &__paragraph {
@@ -116,9 +119,11 @@
         color: $copyright-font;
         font-size: 12px;
         line-height: 18px;
-
     }
-
+}
+.contacts-nav-color {
+    text-decoration-color: $copyright-font;
+    color: $copyright-font;
 }
 
 .card__main-text--foodtruck {
@@ -137,6 +142,9 @@
 }
 
 .button__style {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 162px;
     height: 44px;
     border-radius: 22px;
@@ -164,7 +172,6 @@
         justify-content: center;
     }
     .container-contacts {
-        padding-top: 119px;
         padding-bottom: 81px;
     }
     .container-contacts-btn {
@@ -252,7 +259,6 @@
 
 @media (min-width: 1200px) {
     .container-contacts {
-        padding-top: 132px;
         padding-bottom: 86px;
     }
     .container-contacts-btn {
@@ -282,4 +288,15 @@
             left: 43px;
         }
     }
+}
+.contacts-header {
+    display: none;
+}
+.card__btn-icon {
+    fill: rgba(212, 20, 67, 1);
+    width: 20px;
+    height: 9px;
+}
+.card__btn-icon--red {
+    fill: $white;
 }
