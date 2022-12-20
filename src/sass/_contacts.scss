@@ -1,7 +1,7 @@
 .contacts {
     background: linear-gradient(
-        $white 25%,
-        $pink-bcg-light 25% 
+        $white 6%,
+        $pink-bcg-light 6% 
     );
 }
 .cards {
@@ -45,33 +45,40 @@
         background-color: $coffee;
         width: 80px;
         height: 16px;
-        line-height: 186%;
         border-radius: 4px;
         display: flex;
         align-items: center;
         justify-content: center;
         color: $white;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
     }
 
     &__text {
         position: absolute;
         top: 83px;
-        line-height: 186%;
         letter-spacing: 0.04em;
         font-weight: 500;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 186%;
     }
 
     &__paragraph {
         position: absolute;
         left: 20px;
-        line-height: 18px;
         color: #907E82;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 500;
         font-size: 12px;
-        line-height: 186%;
+        line-height: 18px;
     }
 
     &__paragraph--first {
         top: 106px;
+        width: 170px;
     }
 
     &__paragraph--second {
@@ -102,6 +109,7 @@
         position: absolute;
         font-size: 12px;
         line-height: 186%;
+        font-weight: 500;
     }
 
     &__plan--first {
@@ -167,6 +175,10 @@
 }
 
 @media (min-width: 768px) {
+    .contacts {
+            background: linear-gradient($white 12%,
+                    $pink-bcg-light 12%);
+        }
     .cards {
         flex-direction: row;
         justify-content: center;
@@ -207,15 +219,17 @@
 
         &__paragraph--first {
             top: 148px;
-            line-height: 100%;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 166%;
         }
 
         &__paragraph--second {
-            top: 269px;
+            top: 279px;
         }
 
         &__paragraph--third {
-            top: 335px;
+            top: 345px;
         }
 
         &__border--first {
@@ -223,7 +237,7 @@
         }
 
         &__border--second {
-            top: 426px;
+            top: 416px;
         }
 
         &__plan {
@@ -241,9 +255,12 @@
         }
 
         &__nav {
-            top: 460px;
+            top: 445px;
             left: 30px;
             font-size: 16px;
+        }
+        &__nav--style {
+            line-height: 200%;
         }
 
 
@@ -258,6 +275,10 @@
 }
 
 @media (min-width: 1200px) {
+    .contacts {
+            background: linear-gradient($white 14%,
+                    $pink-bcg-light 14%);
+        }
     .container-contacts {
         padding-bottom: 86px;
     }
@@ -271,7 +292,9 @@
         &__main-text {
             left: 43px;
         }
-
+        &__paragraph--first {
+            width: 200px;
+        }
         &__text {
             left: 43px;
         }
@@ -286,7 +309,11 @@
 
         &__nav {
             left: 43px;
+            // top: 10px;
         }
+                &__nav--style {
+                    line-height: 220%;
+                }
     }
 }
 .contacts-header {
