@@ -1,11 +1,20 @@
-.header-buttons {
-  display: flex;
-}
 .header-burger__button {
   cursor: pointer;
   border: none;
   background-color: transparent;
 }
+
+.header-burger__icon {
+  height: 12px;
+  width: 20px;
+  fill: $red-font;
+}
+
+.header-burger__button-open {
+  border: none;
+  box-shadow: none;
+}
+
 .header-navigation__list {
   display: flex;
   flex-direction: row;
@@ -13,8 +22,13 @@
   gap: 35px;
 }
 
+
 .header-navigation {
   margin: auto;
+  display: none;
+}
+
+.header-navigation__list-item {
   display: none;
 }
 
@@ -32,34 +46,13 @@
   align-items: center;
 }
 
-.header-burger__button-open {
-  border: none;
-  box-shadow: none;
-}
-
-.header-navigation__list-item {
-  display: none;
-}
-
-.header-burger__icon {
-  height: 12px;
-  width: 20px;
-  fill: $red-font;
-}
-
 .header-form__button {
   display: none;
 }
 .header-wrapper {
   width: 100%;
 }
-.header-buttons__list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: center;
-}
+
 
 @media screen and (min-width: 768px) {
   .header-flex {
@@ -69,18 +62,8 @@
   .header-logo {
     flex-grow: 2;
   }
-  .header-buttons__list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 
-    padding-left: 0px;
-  }
-  .header-button__list-element {
-    padding-left: 20px;
-    padding-right: 0px;
-  }
-
+ 
   .header-burger__button-open {
     align-items: center;
   }
@@ -92,6 +75,7 @@
     border: none;
     font-family: var($font-family-secondary);
     color: $red-font;
+    background-color:$white ;
     font-size: 16px;
     font-weight: 700;
     margin-left: 30px;
@@ -101,9 +85,6 @@
   }
   .header-form {
     display: flex;
-  }
-  .header-buttons {
-    justify-content: right;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -121,16 +102,6 @@
   }
   .header-navigation {
     display: flex;
-  }
-  .header-navigation__list-item--2 {
-    width: 70px;
-  }
-  .header-navigation__list-item--3 {
-    width: 117px;
-  }
-
-  .header-navigation__list-item--4 {
-    width: 104px;
   }
 
   .header-navigation__list-item:focus,
