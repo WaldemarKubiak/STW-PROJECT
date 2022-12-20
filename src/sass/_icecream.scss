@@ -110,51 +110,66 @@
   //SEKCJA Z LODEM//
   &__ice {
     z-index: -1;
-    width: 171px;
-    height: 410px;
     position: absolute;
     right: 0;
-    bottom: 0;
-    background-image: url('../images/ice.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url('../images/ice@2x.png');
-    }
-    @media (min-device-pixel-ratio: 3), (min-resolution: 192dpi), (min-resolution: 3dppx) {
-      background-image: url('../images/ice@3x.png');
-    }
+    bottom: -5px;
     @media screen and (min-width: 768px) {
-      width: 143px;
-      height: 336px;
-      right: 190px;
+      right: 200px;
     }
     @media screen and (min-width: 1280px) {
-      width: 236px;
-      height: 557px;
       right: 340px;
     }
-  }
-  &__ice-elipse {
-    z-index: -2;
-    position: absolute;
-    right: -94px;
-    bottom: 75px;
-    width: 346px;
-    height: 346px;
-    background-color: $pink-font;
-    border-radius: 50%;
-    @media screen and (min-width: 768px) {
-      width: 324px;
-      height: 324px;
-      right: 80px;
-      bottom: 46px;
-    }
-    @media screen and (min-width: 1280px) {
-      width: 538px;
-      height: 538px;
-      right: 160px;
-      bottom: 75px;
+    &--picture {
+      width: 171px;
+      height: 410px;
+      position: relative;
+      background-image: url('../images/ice.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url('../images/ice@2x.png');
+      }
+      @media (min-device-pixel-ratio: 3), (min-resolution: 192dpi), (min-resolution: 3dppx) {
+        background-image: url('../images/ice@3x.png');
+      }
+      @media screen and (min-width: 768px) {
+        width: 143px;
+        height: 336px;
+      }
+      @media screen and (min-width: 1280px) {
+        background-image: url('../images/ice-desktop.png');
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url('../images/ice-desktop@2x.png');
+        }
+        @media (min-device-pixel-ratio: 3), (min-resolution: 192dpi), (min-resolution: 3dppx) {
+          background-image: url('../images/ice-desktop@3x.png');
+        }
+        width: 236px;
+        height: 557px;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        z-index: -2;
+        right: -80px;
+        bottom: 85px;
+        width: 346px;
+        height: 346px;
+        background-color: $pink-font;
+        border-radius: 50%;
+        @media screen and (min-width: 768px) {
+          width: 324px;
+          height: 324px;
+          right: -100px;
+          bottom: 55px;
+        }
+        @media screen and (min-width: 1280px) {
+          width: 538px;
+          height: 538px;
+          right: -170px;
+          bottom: 100px;
+        }
+      }
     }
   }
   //sekcja z dzbankiem mleka//
@@ -208,6 +223,7 @@
     border-radius: 50%;
     height: 18px;
     width: 18px;
+    background-color: $white;
     @media screen and (min-width: 1280px) {
       height: 26px;
       width: 26px;
@@ -244,20 +260,21 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-    }
-    &--dot {
-      position: absolute;
-      top: 0;
-      right: -10px;
-      background-color: $white;
-      width: 16px;
-      height: 16px;
-      border-radius: 50%;
-      z-index: -1;
-      @media screen and (min-width: 1280px) {
-        width: 30px;
-        height: 30px;
-        right: -18px;
+      &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: -10px;
+        background-color: $white;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        z-index: -1;
+        @media screen and (min-width: 1280px) {
+          width: 30px;
+          height: 30px;
+          right: -18px;
+        }
       }
     }
     &--quant {
