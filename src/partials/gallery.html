@@ -13,7 +13,7 @@
                     ./images/photo-collage-1280px@1x.png 1x,
                     ./images/photo-collage-1280px@2x.png 2x,
                     ./images/photo-collage-1280px@3x.png 3x">
-            <img src="./images/photo-collage@1x.png" alt="ice cream collage">
+            <img src="./images/photo-collage-320px@1x.png" alt="ice cream collage">
         </picture>
     </div>
 </section>
@@ -21,7 +21,8 @@
     <div class="container slider__container">
         <ul class="slider__list">
             <li class="slider__element">
-                <img src="./images/person-one.png" alt="testimonial">
+                <img src="./images/person-one.png" alt="testimonial"
+                    srcset="./images/person-one@2x.png 2x, ./images/person-one@3x.png 3x">
                 <div class="slider__box">
                     <p class="slider__review">
                         Nullam viverra consectetuer. Quisque cursus et,
@@ -30,17 +31,30 @@
                     </p>
                 </div>
                 <p class="slider__customer">Emily, Los Angeles</p>
-                <div class="slider__pagination">
-                    <svg class="slider__icon slider__icon--home">
-                        <use href="./images/icons.svg#icon-home"></use>
-                    </svg>
-                    <svg class="slider__icon">
-                        <use href="./images/icons.svg#icon-elipse"></use>
-                    </svg>
-                    <svg class="slider__icon">
-                        <use href="./images/icons.svg#icon-elipse"></use>
-                    </svg>
+            </li>
+            <li class="slider__element">
+                <img src="./images/person-two@1x.png" alt="testimonial"
+                    srcset="./images/person-two@2x.png 2x, ./images/person-two@3x.png 3x">
+                <div class="slider__box">
+                    <p class="slider__review">
+                        Nullam viverra consectetuer. Quisque cursus et,
+                        porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                        congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
                 </div>
+                <p class="slider__customer">Emily, Los Angeles</p>
+            </li>
+            <li class="slider__element">
+                <img src="./images/person-three@1x.png" alt="testimonial"
+                    srcset="./images/person-three@2x.png 2x, ./images/person-three@3x.png 3x">
+                <div class="slider__box">
+                    <p class="slider__review">
+                        Nullam viverra consectetuer. Quisque cursus et,
+                        porttitor risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
+                        congue. Lorem ipsum primis in nibh vel risus.
+                    </p>
+                </div>
+                <p class="slider__customer">Emily, Los Angeles</p>
             </li>
         </ul>
     </div>

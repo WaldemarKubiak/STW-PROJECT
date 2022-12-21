@@ -1,0 +1,42 @@
+.our-location {
+  position: fixed;
+  top: 25%;
+  left: 20%;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $pitaja;
+  padding: 50px 30px;
+  border: 1px solid $red-font;
+  border-radius: 20px;
+  z-index: 10;
+  transition: opacity $transition-duration $transition-timing-function,
+    visibility $transition-duration $transition-timing-function,
+    pointer-events $transition-duration $transition-timing-function;
+  &__close-btn {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    padding: 0;
+    color: $white;
+    border: none;
+    background-color: transparent;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 30px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  &__map {
+    background-image: url(../images/chickago-map.png);
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 1px solid $red-font;
+    border-radius: 20px;
+  }
+}

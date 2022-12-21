@@ -1,0 +1,48 @@
+.read-more {
+  display: none;
+  @media screen and (min-width: 768px) {
+    position: fixed;
+    top: 25%;
+    left: 30%;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $pitaja;
+    padding: 50px 30px;
+    border: 1px solid $red-font;
+    border-radius: 20px;
+    z-index: 10;
+    transition: opacity $transition-duration $transition-timing-function,
+      visibility $transition-duration $transition-timing-function,
+      pointer-events $transition-duration $transition-timing-function;
+  }
+  &__close-btn {
+    position: absolute;
+    top: 23px;
+    right: 28px;
+    padding: 0;
+    color: $white;
+    border: none;
+    background-color: transparent;
+  }
+  &__title {
+    font-size: 26px;
+    line-height: 30px;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  &__text {
+    font-family: $font-family-secondary;
+    font-size: 14px;
+    line-height: 1.43;
+    margin: 0;
+    color: $red-font;
+  }
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
