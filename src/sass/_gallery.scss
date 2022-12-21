@@ -30,6 +30,11 @@
     }
   }
 
+  &__list {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   &__element {
     display: flex;
     flex-direction: column;
@@ -79,7 +84,7 @@
 
       @media screen and (min-width: 768px) {
         background-image: url('../images/quote@2x.png');
-        left: 40px;
+        left: 60px;
         background-size: cover;
         background-repeat: no-repeat;
       }
@@ -103,12 +108,12 @@
 
       @media screen and (min-width: 768px) {
         bottom: -24px;
-        left: 294px;
+        left: 261px;
       }
 
       @media screen and (min-width: 1280px) {
         bottom: -15px;
-        left: 444px;
+        left: 400px;
       }
     }
   }
@@ -167,24 +172,6 @@
       margin-top: 15px;
       font-size: 20px;
       margin-bottom: 20px;
-    }
-  }
-
-  &__pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 18px;
-    fill: #d9d9d9;
-  }
-  &__icon {
-    width: 12px;
-    height: 12px;
-
-    &--home {
-      width: 12.4px;
-      height: 11.8px;
-      fill: #d31342;
     }
   }
 }
