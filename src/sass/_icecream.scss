@@ -320,3 +320,19 @@
     }
   }
 }
+.slide-bottom {
+  -webkit-animation: slide-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse
+    both;
+  animation: slide-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite alternate-reverse both;
+}
+.slide-bottom-delay {
+  -webkit-animation: slide-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s infinite
+    alternate-reverse both;
+  animation: slide-bottom 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s infinite alternate-reverse
+    both;
+}
+.scale-up-center {
+  -webkit-animation: scale-up-center 3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite
+    alternate-reverse both;
+  animation: scale-up-center 3s cubic-bezier(0.39, 0.575, 0.565, 1) infinite alternate-reverse both;
+}
