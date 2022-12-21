@@ -94,20 +94,20 @@
 /* @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) 
 @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px)  */
 
-@media (min-width: 320px) {
-  .menu-container {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100%;
-    background-color: #e17992;
-    z-index: 999;
-    transform: translateX(100%);
-    transition: transform 250ms ease-in-out;
-  }
-
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
+// @media (min-width: 320px) {
+.menu-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #e17992;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+// }
