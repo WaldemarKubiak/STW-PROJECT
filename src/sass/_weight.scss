@@ -1,16 +1,15 @@
-.background {
-  background-color: #fff5f6;
-}
+.advantages-section {
+  background-color: $pink-background;
 
-.advantages {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
 
   &__title {
-    color: transparent;
-    margin: 0;
+    display: none;
   }
 
   &__list {
@@ -31,13 +30,58 @@
     position: relative;
   }
 
+  &__item--first::before {
+    content: ('');
+    background-image: url(../images/icon-one.png);
+    background-size: cover;
+    position: absolute;
+    width: 33px;
+    height: 50px;
+    left: 0;
+    top: -67px;
+
+    @media screen and (min-width: 768px) {
+      top: -77px;
+    }
+  }
+
+  &__item--second::before {
+    content: ('');
+    background-image: url(../images/icon-two.png);
+    background-size: cover;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 0;
+    top: -67px;
+
+    @media screen and (min-width: 768px) {
+      top: -77px;
+    }
+  }
+
   &__item--third {
     margin-bottom: 97px;
+
+    &:before {
+      content: ('');
+      background-image: url(../images/icon-three.png);
+      background-size: cover;
+      position: absolute;
+      width: 44px;
+      height: 50px;
+      left: 0;
+      top: -67px;
+
+      @media screen and (min-width: 768px) {
+        top: -77px;
+      }
+    }
   }
 
   &__text {
     font-family: $font-family-secondary, sans-serif;
-    color: #000;
+    color: $black;
     font-size: 12px;
     font-weight: 700;
     line-height: 1.7;
@@ -75,49 +119,9 @@
       max-width: 330px;
     }
   }
-}
-
-.advantages__item--first::before {
-  content: ('');
-  background-image: url(../images/icon-one.png);
-  background-size: cover;
-  position: absolute;
-  width: 33px;
-  height: 50px;
-  left: 0;
-  top: -67px;
-
-  @media screen and (min-width: 768px) {
-    top: -77px;
-  }
-}
-
-.advantages__item--second::before {
-  content: ('');
-  background-image: url(../images/icon-two.png);
-  background-size: cover;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  left: 0;
-  top: -67px;
-
-  @media screen and (min-width: 768px) {
-    top: -77px;
-  }
-}
-
-.advantages__item--third::before {
-  content: ('');
-  background-image: url(../images/icon-three.png);
-  background-size: cover;
-  position: absolute;
-  width: 44px;
-  height: 50px;
-  left: 0;
-  top: -67px;
-
-  @media screen and (min-width: 768px) {
-    top: -77px;
+  @media screen and (max-width: 767px) {
+    &__container {
+      max-width: 320px;
+    }
   }
 }

@@ -1,7 +1,79 @@
 <header class="icecream-wrapper">
   <div class="container">
     <div class="icecream">
-      <div class="icecream__navbar">TU JEST NAVBAR</div>
+      <!-- HEADER -->
+      <div class="header-flex">
+        <div class="header-logo">
+          <a href="#" class="header-logo__link">
+            <img src="../src/images/logo.png" alt="logo" />
+          </a>
+        </div>
+        <div class="header-navigation">
+          <nav class="header-navigation__section">
+            <ul class="header-navigation__list">
+              <li>
+                <a class="header-navigation__list-item header-navigation__list-item--1" href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a class="header-navigation__list-item header-navigation__list-item--2" href="#"
+                  >About&nbspus</a
+                >
+              </li>
+              <li>
+                <a class="header-navigation__list-item header-navigation__list-item--3" href="#"
+                  >How&nbspit's&nbspmade?</a
+                >
+              </li>
+              <li>
+                <a class="header-navigation__list-item header-navigation__list-item--4" href="#"
+                  >Our&nbspproducts</a
+                >
+              </li>
+              <li>
+                <a class="header-navigation__list-item header-navigation__list-item--5" href="#"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <button class="js-open-menu header-burger__button" data menu="#" aria expanded="true">
+          <svg class="header-burger__icon">
+            <use href="../src/images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="header-form__button" data-modal-open>Buy now &nbsp&nbsp></button>
+      </div>
+
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-toggle js-close-menu">
+          <svg
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+          >
+            <path d="M1.25928 1L14.7408 15" stroke="white" />
+            <path d="M1 14.7407L15 1.25924" stroke="white" />
+          </svg>
+        </button>
+        <!-- MOBILE-MENU -->
+        <ul class="mobile-menu">
+          <li class="mobile-menu__element">
+            <button class="mobile-menu__button">Buy now</button>
+          </li>
+          <li class="mobile-menu__element"><a href="" class="mobile-menu__element__link">Home</a></li>
+          <li class="mobile-menu__element"><a href="" class="mobile-menu__element__link">About us</a></li>
+          <li class="mobile-menu__element"><a href="" class="mobile-menu__element__link">How it's made?</a></li>
+          <li class="mobile-menu__element"><a href="" class="mobile-menu__element__link">Our products</a></li>
+          <li class="mobile-menu__element"><a href="" class="mobile-menu__element__link">Contact</a></li>
+        </ul>
+      </div>
+      <!-- MOBILE-MENU-end -->
+      <!-- HEADER-end -->
       <div class="icecream__content">
         <h1 class="icecream__title">
           ICE CREAM <br />
@@ -10,10 +82,16 @@
         </h1>
         <ul class="icecream__buttons">
           <li>
-            <button class="icecream__button icecream__button--primary">Products</button>
+            <a href="#product"
+              ><button class="icecream__button icecream__button--primary">Products</button></a
+            >
           </li>
           <li>
-            <button class="icecream__button icecream__button--secondary">How it's made?</button>
+            <a href="#about"
+              ><button class="icecream__button icecream__button--secondary">
+                How it's made?
+              </button></a
+            >
           </li>
         </ul>
         <div class="icecream__milk">
@@ -44,8 +122,9 @@
         </ul>
         <div class="icecream__tasty"></div>
       </div>
-      <div class="icecream__ice"></div>
-      <div class="icecream__ice-elipse"></div>
+      <div class="icecream__ice">
+        <div class="icecream__ice--picture"></div>
+      </div>
     </div>
   </div>
 </header>
