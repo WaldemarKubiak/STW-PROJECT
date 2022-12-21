@@ -1,68 +1,100 @@
-<div class="container">
-  <div class="products">
-    <label class="products__title--secondary">100% natural</label>
-    <h2 class="products__title">products</h2>
-    <ul class="product__group">
-      <li>
-        <div class="product-item__background--primary">
-          <div class="product-item__image"></div>
-          <h3 class="product-item__title">ice cream</h3>
+<div id="product">
+  <div class="container">
+    <div class="products">
+      <label class="products__title--secondary">100% natural</label>
+      <h2 class="products__title">products</h2>
+      <ul class="product__group">
+        <li>
+          <div class="product-item__background--primary">
+            <div class="product-item__image"></div>
+            <h3 class="product-item__title">ice cream</h3>
 
-          <p class="product-item__description--primary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.
-          </p>
-          <p class="product-item__description--secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <button class="product-item__btn">
-            <svg class="product-item__icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-arrow-one"></use>
-            </svg>
-          </button>
-        </div>
-      </li>
-      <li>
-        <div class="product-item__background--secondary">
-          <div class="product-item__image"></div>
-          <h2 class="product-item__title">ice coffee</h2>
+            <p class="product-item__description--primary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <p class="product-item__description--secondary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <button class="product-item__btn" type="button" data-modal-product-open1>
+              <svg class="product-item__icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-arrow-one"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="product-item__background--secondary">
+            <div class="product-item__image"></div>
+            <h2 class="product-item__title">ice coffee</h2>
 
-          <p class="product-item__description--primary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.
-          </p>
-          <p class="product-item__description--secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <button class="product-item__btn">
-            <svg class="product-item__icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-arrow-one"></use>
-            </svg>
-          </button>
-        </div>
-      </li>
-      <li>
-        <div class="product-item__background--tertiary">
-          <div class="product-item__image"></div>
-          <h2 class="product-item__title">milkshakes</h2>
+            <p class="product-item__description--primary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <p class="product-item__description--secondary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <button class="product-item__btn" type="button" data-modal-product-open2>
+              <svg class="product-item__icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-arrow-one"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+        <li>
+          <div class="product-item__background--tertiary">
+            <div class="product-item__image"></div>
+            <h2 class="product-item__title">milkshakes</h2>
 
-          <p class="product-item__description--primary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et. dolore magna aliqua facilisis.
-          </p>
-          <p class="product-item__description--secondary">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-            incididunt ut labore et
-          </p>
-          <button class="product-item__btn">
-            <svg class="product-item__icon" width="10" height="10">
-              <use href="./images/icons.svg#icon-arrow-one"></use>
-            </svg>
-          </button>
-        </div>
-      </li>
-    </ul>
+            <p class="product-item__description--primary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et. dolore magna aliqua facilisis.
+            </p>
+            <p class="product-item__description--secondary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et
+            </p>
+            <button class="product-item__btn" type="button" data-modal-product-open3>
+              <svg class="product-item__icon" width="10" height="10">
+                <use href="./images/icons.svg#icon-arrow-one"></use>
+              </svg>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-product1>
+    <div class="modal--primary">
+      <button class="modal__btn--primary" data-modal-product-close1>x</button>
+      <div class="modal__description--primary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias magnam tempora. Cum
+        cumque modi aperiam doloribus alias impedit dolorem, quam maiores error excepturi? Neque
+        harum aperiam molestiae nisi commodi!
+      </div>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-product2>
+    <div class="modal--secondary">
+      <button class="modal__btn--secondary" data-modal-product-close2>x</button>
+      <div class="modal__description--secondary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias magnam tempora. Cum
+        cumque modi aperiam doloribus alias impedit dolorem, quam maiores error excepturi? Neque
+        harum aperiam molestiae nisi commodi!
+      </div>
+    </div>
+  </div>
+  <div class="backdrop is-hidden" data-modal-product3>
+    <div class="modal--tertiary">
+      <button class="modal__btn--tertiary" data-modal-product-close3>x</button>
+      <div class="modal__description--tertiary">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi alias magnam tempora. Cum
+        cumque modi aperiam doloribus alias impedit dolorem, quam maiores error excepturi? Neque
+        harum aperiam molestiae nisi commodi!
+      </div>
+    </div>
   </div>
 </div>
