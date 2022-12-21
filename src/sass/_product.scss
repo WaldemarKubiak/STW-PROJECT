@@ -498,8 +498,8 @@ button:active .backdrop {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: 90vh;
   background-color: $pink-font;
   z-index: 7;
   border-radius: 10px;
@@ -536,7 +536,6 @@ button:active .backdrop {
   color: $white;
   margin: auto;
   margin-top: 100px;
-  overflow: scroll;
   padding: 15px;
   font-weight: 700;
   font-size: 14px;
@@ -597,7 +596,6 @@ button:active .backdrop {
   color: $white;
   margin: auto;
   margin-top: 100px;
-  overflow: scroll;
   padding: 15px;
   font-weight: 700;
   font-size: 14px;
@@ -657,7 +655,6 @@ button:active .backdrop {
   color: $white;
   margin: auto;
   margin-top: 100px;
-  overflow: scroll;
   padding: 15px;
   font-weight: 700;
   font-size: 14px;
