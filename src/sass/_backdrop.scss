@@ -1,0 +1,326 @@
+.backdrop-data__label{
+    position:absolute;
+    top:0px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+ }
+
+   .backdrop-data__label2{
+    position:absolute;
+    top:-24px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+letter-spacing: 0.01em;
+color: #757575;
+
+  }
+
+.backdrop-data__legal-button{
+ 
+border: 1px solid rgba(255, 255, 255, 0.3);
+background-color:var(--brand-color-background4);
+border-radius: 4px;
+margin-top: 30px;
+font-family: Roboto;
+color:var(--brand-color-czcionka3);
+font-Weight:700;
+font-Size:16px;
+Line-height:30px;
+display: flex;
+align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.backdrop-data__legend{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+margin-top: 40px;
+margin-bottom: 30px;
+
+}
+
+.backdrop-data__fieldset{
+    display:flex;
+    position: relative;
+  width:100%;
+  height: 100%;
+    border-radius: 4px;
+    margin-block: 28px;
+   border-color: rgba(33, 33, 33, 0.2);
+}
+
+.backdrop-data__fieldset2{
+    display:flex;
+    position: relative;
+  width:100%;
+height: 100%;
+    border-radius: 4px;
+    margin-block: 28px;
+     border-color: rgba(33, 33, 33, 0.2);
+}
+
+.backdrop-data{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.backdrop-data .backdrop-data__input{
+    border: 0;
+    margin-left: 40px;
+    background-color: transparent;
+    font-family: Roboto;
+font-Weight:400;
+font-Size:16px;
+line-height:20px;
+
+width: 200px;
+}
+
+
+    
+.backdrop-data__legal-icon{
+     height: 14px;
+  width: 14px;
+  background-color: var(--white-color);
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  fill:white;
+
+}
+
+.backdrop-data__legal{
+         font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 24px;
+letter-spacing: 0.03em;
+color: #757575;
+position:relative;
+}
+
+.backdrop-data__legal .backdrop-data__legal-checkbox{
+    position: relative;
+    width: 16px;
+    height: 15px;
+   }
+
+
+.backdrop-data__legal input{
+    position:absolute;
+    cursor:pointer;
+    width: 0;
+    height:0;
+    opacity: 0;
+    }
+
+    .backdrop-data__legal .backdrop-data__legal-checkmark{
+        position: absolute;
+        height: 16px;
+        width: 15px;
+        border:1px solid black;
+        cursor: pointer;
+        left:0;
+
+    }
+
+.backdrop-data__legal-checkmark::after{
+    display:block;
+border:0px solid white;
+position:absolute;
+display: none;
+top:-4px;
+}
+
+    .backdrop-data__legal input:checked ~ .backdrop-data__legal-checkmark::after{
+        display:block;
+    }
+
+     .backdrop-data__legal input:checked ~ .backdrop-data__legal-checkmark{
+        background-color:var(--brand-color-background4);
+         transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+     }
+
+     
+.backdrop-data__legal-link{
+    color:var(--brand-color-czcionka2);
+}
+
+.backdrop-data .backdrop-data__input:focus{
+    outline:0;
+}
+
+.backdrop-data__fieldset:focus-within{
+    border-color: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-data__fieldset:focus-within .backdrop-data__icon{
+    fill: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop-data__fieldset:hover{
+    border-color: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-data__fieldset:hover .backdrop-data__icon{
+    fill: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-data__input{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+.backdrop-data .backdrop-data__input2{
+    border: 0;
+    background-color: transparent;
+    width: 100%;
+   
+ font-family: Roboto;
+font-weight:400;
+font-size:12px;
+Line-height:14.06px;
+padding-left:16px;
+padding-right:16px;
+padding-top:12px;
+padding-left:12px;
+resize:none;
+  position:relative;
+
+}
+
+
+.backdrop-data__input2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.backdrop-data .backdrop-data__input2:focus{
+    outline:0;
+}
+
+.backdrop-data__fieldset2:focus-within{
+    border-color: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.backdrop-data__fieldset2:hover{
+    border-color: #2196f3;
+     transition-property: fill;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+
+.backdrop-data .backdrop-data__label{
+ position:absolute;
+ top:-24px;
+
+}
+
+
+
+.backdrop-data__icon{
+    position:absolute;
+    top:14px;
+    left:15px;
+    fill:#212121;
+}
+
+
+.backdrop{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);
+    transition: transform .35s;
+}
+
+
+.backdrop__close-button{
+        position:absolute;
+    top:8px;
+    right:8px;
+    width:30px;
+    height:30px;
+    background-color: #fff;
+    border:1px solid rgba(0,0,0,0.1);
+    border-radius:50%;
+    cursor:pointer;
+}
+.backdrop__close-icon{
+    position:absolute;
+    top:8px;
+    right:8px;
+    width:11px;
+    height:11px; 
+}
+   .backdrop__modal{  
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:581px;
+    background-color: #fff;
+    margin:auto;
+    width: 100%; 
+    max-width: 585px; 
+    height: auto; 
+    padding-bottom: 30px;
+
+}
+@media screen and (min-width: 1200px) {
+
+    .backdrop__modal{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:528px;
+    height:581px;
+    background-color: #fff;
+
+}}
