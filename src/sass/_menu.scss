@@ -94,6 +94,7 @@
 /* @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) 
 @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px) @media (min-width: 320px)  */
 
+// @media (min-width: 320px) {
 .menu-container {
   position: fixed;
   top: 0;
@@ -109,3 +110,4 @@
 .menu-container.is-open {
   transform: translateX(0);
 }
+// }
