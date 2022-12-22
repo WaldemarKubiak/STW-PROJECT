@@ -108,7 +108,8 @@
 
       @media screen and (min-width: 768px) {
         bottom: -24px;
-        left: 261px;
+        left: 50%;
+        transform: translateX(-50%);
       }
 
       @media screen and (min-width: 1280px) {
