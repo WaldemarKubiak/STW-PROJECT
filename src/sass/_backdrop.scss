@@ -1,273 +1,259 @@
-.backdrop__modal{  
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    height:581px;
-    background-color:$white;
-    opacity:90%;
-    margin:auto;
-    width: 100%; 
-    max-width: 420px; 
-    height: auto; 
-    padding-bottom: 30px;
+.backdrop__modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 581px;
+  background-color: $white;
+  margin: auto;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  padding-bottom: 30px;
 }
-.backdrop-data__label{
-    position:absolute;
-    top:-24px;
-font-family: $font-family-secondary;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: $black;
- }
-
-
-  
-.backdrop-data__legend{
-    font-family:$font-family-primary;
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-color: $red-font;
-margin-top: 40px;
-margin-bottom: 30px;
+.backdrop-data__label {
+  position: absolute;
+  top: -24px;
+  font-family: $font-family-secondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: $black;
 }
 
-.backdrop-data__legend2{
-     font-family:$font-family-primary;
-    font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-color: $red-font;
+.backdrop-data__legend {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $red-font;
+  margin-top: 40px;
+  margin-bottom: 30px;
 }
 
-.backdrop-data__fieldset{
-    display:flex;
-    position: relative;
-  width:100%;
+.backdrop-data__legend2 {
+  font-family: $font-family-primary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $red-font;
+}
+
+.backdrop-data__fieldset {
+  display: flex;
+  position: relative;
+  width: 100%;
   height: 100%;
-    border-radius: 4px;
-    margin-block: 28px;
-   border-color: rgba(225, 12, 30, 0.607);
+  border-radius: 4px;
+  margin-block: 28px;
+  border-color: rgba(225, 12, 30, 0.607);
 }
 
-.backdrop-data__fieldset2{
-    display:flex;
-    position: relative;
-  width:100%;
-height: 100%;
-    margin-block: 28px;
-     border: none;
-
+.backdrop-data__fieldset2 {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-block: 28px;
+  border: none;
 }
 
-.backdrop-data__legal-button{
- border: 1px solid rgba(255, 255, 255, 0.3);
-background-color:var(--brand-color-background4);
-border-radius: 4px;
-margin-top: 30px;
-font-family:$font-family-primary;
-color: $red-font;
-font-Size:18px;
-display: flex;
-align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    cursor: pointer;
-    padding-left: 76px;
-    padding-right: 76px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.backdrop-data__legal-button {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: var(--brand-color-background4);
+  border-radius: 4px;
+  margin-top: 30px;
+  font-family: $font-family-primary;
+  color: $red-font;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  cursor: pointer;
+  padding-left: 76px;
+  padding-right: 76px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-
-.backdrop-data__send{
-    padding-left: 20px;
+.backdrop-data__send {
+  padding-left: 20px;
 }
-.backdrop-data__checkbox--cream{
-    color:#f0a2d1;
-       font-family:$font-family-primary;
-font-weight: 400;
-font-size: 16px;
+.backdrop-data__checkbox--cream {
+  color: #f0a2d1;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 16px;
 }
-.backdrop-data__checkbox--coffee{
-    color:#f4c133;
-       font-family:$font-family-primary;
-font-weight: 400;
-font-size: 16px;
+.backdrop-data__checkbox--coffee {
+  color: #f4c133;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 16px;
 }
-.backdrop-data__checkbox--milkshake{
-    color:#abfb48;
-       font-family:$font-family-primary;
-font-weight: 400;
-font-size: 16px;
-}
-
-.backdrop-data{
-    padding-left: 40px;
-    padding-right: 40px;
-}
-.backdrop-data__fieldset__list{
-    display:flex;
-    flex-direction: column;
+.backdrop-data__checkbox--milkshake {
+  color: #abfb48;
+  font-family: $font-family-primary;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.backdrop-data .backdrop-data__input{
-    border: 0;
-    margin-left: 40px;
-    background-color: transparent;
-    font-family: Roboto;
-font-Weight:400;
-font-Size:16px;
-line-height:20px;
-width: 200px;
+.backdrop-data {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.backdrop-data__fieldset__list {
+  display: flex;
+  flex-direction: column;
 }
 
-
-.backdrop-data .backdrop-data__input:focus{
-    outline:0;
+.backdrop-data .backdrop-data__input {
+  border: 0;
+  margin-left: 40px;
+  background-color: transparent;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  width: 100%;
 }
 
-.backdrop-data__fieldset:focus-within{
-    border-color: #2196f3;
-     transition-property: fill;
+.backdrop-data .backdrop-data__input:focus {
+  outline: 0;
+}
+
+.backdrop-data__fieldset:focus-within {
+  border-color: #2196f3;
+  transition-property: fill;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-data__fieldset:hover{
-    border-color: #2196f3;
-     transition-property: fill;
+.backdrop-data__fieldset:hover {
+  border-color: #2196f3;
+  transition-property: fill;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-data__fieldset:hover .backdrop-data__icon{
-    fill: #2196f3;
-     transition-property: fill;
+.backdrop-data__fieldset:hover .backdrop-data__icon {
+  fill: #2196f3;
+  transition-property: fill;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.backdrop-data__input{
-    padding-top: 5px;
-    padding-bottom: 5px;
-    
+.backdrop-data__input {
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-
-.backdrop-data .backdrop-data__label{
- position:absolute;
- top:-24px;
-
+.backdrop-data .backdrop-data__label {
+  position: absolute;
+  top: -24px;
 }
 
-.backdrop__close-button{
-        position:absolute;
-    top:8px;
-    right:8px;
-    width:30px;
-    height:30px;
-    fill: $black;
-    background-color: #fff;
-    border:1px solid rgba(0,0,0,0.1);
-    border-radius:50%;
-    cursor:pointer;
+.backdrop__close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  fill: $black;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  cursor: pointer;
 }
-
 
 @media screen and (min-width: 768px) {
-.backdrop__modal{  
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    height:581px;
-    background-color:$white;
-    opacity:90%;
-    margin:auto;
-    width: 100%; 
-    max-width: 585px; 
-    height: auto; 
+  .backdrop__modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 581px;
+    background-color: $white;
+    margin: auto;
+    width: 100%;
+    max-width: 585px;
+    height: auto;
     padding-bottom: 30px;
-}
-.backdrop-data__label{
-    position:absolute;
-    top:-24px;
-font-family: $font-family-secondary;
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 14px;
-letter-spacing: 0.01em;
-color: $black;
- }
-
-
-  
-.backdrop-data__legend{
-    font-family:$font-family-primary;
-font-style: normal;
-font-weight: 400;
-font-size: 22px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-color: $red-font;
-margin-top: 40px;
-margin-bottom: 30px;
-}
-
-.backdrop-data__legend2{
-     font-family:$font-family-primary;
+  }
+  .backdrop-data__label {
+    position: absolute;
+    top: -24px;
+    font-family: $font-family-secondary;
     font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 23px;
-text-align: center;
-letter-spacing: 0.03em;
-color: $red-font;
-}
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: $black;
+  }
 
-.backdrop-data__fieldset{
-    display:flex;
+  .backdrop-data__legend {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $red-font;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .backdrop-data__legend2 {
+    font-family: $font-family-primary;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $red-font;
+  }
+
+  .backdrop-data__fieldset {
+    display: flex;
     position: relative;
-  width:100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 4px;
     margin-block: 28px;
-   border-color: rgba(225, 12, 30, 0.607);
-}
+    border-color: rgba(225, 12, 30, 0.607);
+  }
 
-.backdrop-data__fieldset2{
-    display:flex;
+  .backdrop-data__fieldset2 {
+    display: flex;
     position: relative;
-  width:100%;
-height: 100%;
+    width: 100%;
+    height: 100%;
     margin-block: 28px;
-     border: none;
+    border: none;
+  }
 
-}
-
-.backdrop-data__legal-button{
- border: 1px solid rgba(255, 255, 255, 0.3);
-background-color:var(--brand-color-background4);
-border-radius: 4px;
-margin-top: 30px;
-font-family:$font-family-primary;
-color: $red-font;
-font-Size:18px;
-display: flex;
-align-items: center;
+  .backdrop-data__legal-button {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: var(--brand-color-background4);
+    border-radius: 4px;
+    margin-top: 30px;
+    font-family: $font-family-primary;
+    color: $red-font;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
     margin-left: auto;
     margin-right: auto;
     cursor: pointer;
@@ -275,104 +261,95 @@ align-items: center;
     padding-right: 76px;
     padding-top: 10px;
     padding-bottom: 10px;
-}
+  }
 
-
-.backdrop-data__send{
+  .backdrop-data__send {
     padding-left: 20px;
-}
-.backdrop-data__checkbox--cream{
-    color:#f0a2d1;
-       font-family:$font-family-primary;
-font-weight: 400;
-font-size: 16px;
-}
-.backdrop-data__checkbox--coffee{
-    color:#f4c133;
-       font-family:$font-family-primary;
-font-weight: 400;
-font-size: 16px;
-}
-.backdrop-data__checkbox--milkshake{
-    color:#abfb48;
-       font-family:$font-family-primary;
-font-weight: 400;
-font-size: 16px;
-}
+  }
+  .backdrop-data__checkbox--cream {
+    color: #f0a2d1;
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .backdrop-data__checkbox--coffee {
+    color: #f4c133;
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .backdrop-data__checkbox--milkshake {
+    color: #abfb48;
+    font-family: $font-family-primary;
+    font-weight: 400;
+    font-size: 16px;
+  }
 
-.backdrop-data{
+  .backdrop-data {
     padding-left: 40px;
     padding-right: 40px;
-}
-.backdrop-data__fieldset__list{
-    display:flex;
+  }
+  .backdrop-data__fieldset__list {
+    display: flex;
     flex-direction: column;
-}
+  }
 
-.backdrop-data .backdrop-data__input{
+  .backdrop-data .backdrop-data__input {
     border: 0;
     margin-left: 40px;
     background-color: transparent;
     font-family: Roboto;
-font-Weight:400;
-font-Size:16px;
-line-height:20px;
-width: 200px;
-}
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: 100%;
+  }
 
+  .backdrop-data .backdrop-data__input:focus {
+    outline: 0;
+  }
 
-.backdrop-data .backdrop-data__input:focus{
-    outline:0;
-}
-
-.backdrop-data__fieldset:focus-within{
+  .backdrop-data__fieldset:focus-within {
     border-color: #2196f3;
-     transition-property: fill;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-property: fill;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.backdrop-data__fieldset:hover{
+  .backdrop-data__fieldset:hover {
     border-color: #2196f3;
-     transition-property: fill;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-property: fill;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.backdrop-data__fieldset:hover .backdrop-data__icon{
+  .backdrop-data__fieldset:hover .backdrop-data__icon {
     fill: #2196f3;
-     transition-property: fill;
-  transition: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    transition-property: fill;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 
-.backdrop-data__input{
+  .backdrop-data__input {
     padding-top: 5px;
     padding-bottom: 5px;
-    
-}
+  }
 
+  .backdrop-data .backdrop-data__label {
+    position: absolute;
+    top: -24px;
+  }
 
-.backdrop-data .backdrop-data__label{
- position:absolute;
- top:-24px;
-
-}
-
-.backdrop__close-button{
-        position:absolute;
-    top:8px;
-    right:8px;
-    width:30px;
-    height:30px;
+  .backdrop__close-button {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
     fill: $black;
     background-color: #fff;
-    border:1px solid rgba(0,0,0,0.1);
-    border-radius:50%;
-    cursor:pointer;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    cursor: pointer;
+  }
 }
-}
-
-
-
-
